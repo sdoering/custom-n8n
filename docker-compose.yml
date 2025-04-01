@@ -1,0 +1,8 @@
+services:
+  n8n:
+    image: ghcr.io/YOUR_USERNAME/n8n-custom:latest
+    environment:
+      - N8N_EDITOR_BASE_URL=https://your-domain.com
+      # Add other required environment variables
+    volumes:
+      - n8n-data:/home/node/.n8n
